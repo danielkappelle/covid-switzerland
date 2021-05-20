@@ -4,11 +4,14 @@
   "description": "",
   "main": "readdata.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --watch index.js --inspect index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
     "moment": "^2.29.1"
   }
 }
