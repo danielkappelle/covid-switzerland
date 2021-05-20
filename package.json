@@ -5,7 +5,9 @@
   "main": "readdata.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon --watch index.js --inspect index.js"
+    "start": "nodemon --watch index.js --inspect index.js",
+    "docker:build": "docker build -t rg.nl-ams.scw.cloud/danielkappelle/covid-switzerland:$npm_package_version .",
+    "docker:push": "docker push rg.nl-ams.scw.cloud/danielkappelle/covid-switzerland:$npm_package_version"
   },
   "author": "",
   "license": "ISC",
